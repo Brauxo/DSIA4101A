@@ -15,5 +15,6 @@ if __name__ == "__main__":
     cleaned_data = data.filtered_data()
 
     print(cleaned_data.head())  
+    
 
 
