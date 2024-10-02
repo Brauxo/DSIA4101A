@@ -4,7 +4,7 @@ import json
 # initialisize the app
 if __name__ == "__main__":
     # here we have the url of our json file :
-    url = 'https://www.data.gouv.fr/fr/datasets/r/15ebb66f-a235-45a3-8ad7-639d0e5cc21d'
+    url = 'https://www.data.gouv.fr/fr/datasets/r/c582bbe8-2d56-4273-a9f2-096b7377317b'
 
     #extraction and CLeaning of the data : 
     data = Cleaning(url)
@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     cleaned_data = data.filtered_data()
 
-    print(cleaned_data.head())  
+    print(cleaned_data)  
     
 
 
