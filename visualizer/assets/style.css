@@ -1,0 +1,121 @@
+/* Header */
+.header {
+    display: flex;  /* Utilise le flex pour l'alignement */
+    justify-content: center;  /* Centre le contenu */
+    align-items: center;  /* Centre verticalement */
+    background-color: #003366;  /* Fond bleu foncé */
+    height: 3rem;  /* Hauteur réduite */
+    padding: 10px;  /* Paddings pour un espacement confortable */
+    border-radius: 0;  /* Pas de coins arrondis */
+    position: fixed;  /* Fixe le header en haut */
+    top: 0;  /* Colle le header au haut de la page */
+    left: 0;  /* Colle le header au bord gauche */
+    right: 0;  /* Colle le header au bord droit */
+    z-index: 1;  /* Assure que le header reste au-dessus du contenu */
+}
+
+/* Title */
+.header-title {
+    color: #ffffff;  /* Couleur du texte du titre en blanc */
+    font-size: 25px;  /* Taille du texte réduite */
+    margin: 0;  /* Pas de marges */
+}
+
+/* Horizontal Rule */
+.header-hr {
+    border: none;  /* Pas de ligne horizontale si désiré */
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;  /* Centre les éléments de la navbar */
+    background-color: #e3dede;  /* Fond gris clair ou toute autre couleur désirée */
+    height: 2rem;  /* Hauteur de la navbar */
+    align-items: center;  /* Centre verticalement les éléments */
+    border-radius: 10px;  /* Coins arrondis pour donner un effet de bulle */
+    padding: 5px;  /* Paddings pour un espacement confortable */
+    position: fixed;  /* Fixe la navbar */
+    top: 3rem;  /* Place la navbar juste en dessous du header */
+    left: 870px;  /* Colle la navbar au bord gauche avec un espacement */
+    right: 870px;  /* Colle la navbar au bord droit avec un espacement */
+    z-index: 1;  /* Assure que la navbar reste au-dessus du contenu */
+    box-shadow: none;  /* Pas d'ombre pour une apparence plate */
+}
+
+/* Links in the Navbar */
+.navbar a {
+    color: #1A1A1A;  /* Couleur des liens en gris foncé */
+    text-decoration: none;  /* Pas de soulignement */
+    margin: 0 15px;  /* Espacement entre les liens */
+    font-size: 16px;  /* Taille du texte des liens */
+}
+
+/* Style pour le hover sur les liens */
+.navbar a:hover {
+    text-decoration: underline;  /* Souligne les liens au survol */
+    color: #003366;  /* Change la couleur des liens au survol */
+}
+
+/* Icons in the Navbar */
+.nav-icon {
+    width: 48px;  /* Ajustez la taille de l'icône */
+    height: 48px;  /* Ajustez la taille de l'icône */
+    margin-right: 5px;  /* Espacement entre l'icône et le texte */
+}
+
+/*CARTE
+/* Styles pour l'iframe de la carte */
+.map-iframe {
+    margin-top: 20px;  /* Ajoute un espace de 20px sous le header */
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;  /* Texte en blanc */
+    background-color: #003366;  /* Fond bleu foncé */
+    height: 3rem;  /* Hauteur réduite */
+    align-items: center;
+    padding: 10px;  /* Paddings pour un espacement confortable */
+    border-radius: 0;  /* Pas de coins arrondis */
+    position: fixed;  /* Fixe le footer en bas */
+    bottom: 0;  /* Colle le footer au bas de la page */
+    left: 0;  /* Colle le footer au bord gauche */
+    right: 0;  /* Colle le footer au bord droit */
+    z-index: 1;  /* Assure que le footer reste au-dessus du contenu */
+}
+
+/* Logo */
+.logo {
+    border-radius: 5px;
+    max-width: 150px;  /* Limite la largeur des logos */
+    max-height: 80px;  /* Limite la hauteur des logos */
+    margin: 0 15px;  /* Marges pour espacer les logos */
+}
+
+/* Unit */
+.unit {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 12px;
+    margin: 0;  /* Retire les marges par défaut */
+}
+
+/* Credits */
+.credits {
+    text-align: center;
+    font-size: 12px;
+    margin: 0;  /* Retire les marges par défaut */
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    margin: 0;  /* Retire les marges par défaut */
+}
