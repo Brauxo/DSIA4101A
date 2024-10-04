@@ -6,9 +6,9 @@ from visualizer.components.navbar import create_navbar
 
 def simple_page2(app, data_frame):
     """
-    Crée la mise en page de la page 2 avec un histogramme.
+    Créer la mise en page de la page 2 avec un histogramme.
     """
-    # Crée un histogramme à partir des données nettoyées
+    # Créer un histogramme à partir des données nettoyées
     fig = px.histogram(data_frame, x='pk_debut', nbins=30,  # Choisissez la colonne appropriée pour l'histogramme
                        title='Histogramme des Positions de Début (pk_debut)',
                        labels={'pk_debut': 'Position de Début (pk_debut)'})

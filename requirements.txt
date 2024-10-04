@@ -1,0 +1,5 @@
+pandas==<latest version>
+dash==<latest version>
+plotly==<latest version>
+folium==<latest version>
+requests==<latest version>
