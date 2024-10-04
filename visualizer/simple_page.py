@@ -16,7 +16,12 @@ class Affichage:
         map_center = [46.603354, 1.888334]  # Coordonnées approximatives du centre de la France
         map_object = folium.Map(location=map_center, zoom_start=6, tiles='OpenStreetMap')
 
-        for index, row in self.cleaned_data.head(150).iterrows():
+
+        # nombre de lignes sélectionnées (3347 le max)
+        line_count = 1650
+
+
+        for index, row in self.cleaned_data.head(line_count).iterrows():
             coordinates = row['coordinates']  # Liste de coordonnées pour cette ligne
 
             if coordinates and len(coordinates) > 0:
