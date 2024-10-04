@@ -1,11 +1,13 @@
 from data.cleaning import cleaning
 
+# Fonction qui traite les données à partir de l'url
 def data_process(url):
-    # Extraction and cleaning of the data
+
+    # # Extraction, nettoyage des données et creation d'un dataframe ordonné.
     data = cleaning(url)
+    data.load_data()  
+    data.clean_data()  
+    cleaned_data = data.filtered_data() 
 
-    data.load_data()  # Load the data
-    data.clean_data()  # Clean the data using the Extract class
-    cleaned_data = data.filtered_data()  # Get the organized data
-
+    #renvoie les données sous forme de dataframe
     return cleaned_data
