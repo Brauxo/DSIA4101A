@@ -18,17 +18,26 @@ class Affichage:
 
 
         # nombre de lignes sélectionnées (3347 le max)
-        line_count = 1650
-
+        line_count = 3347
 
         for index, row in self.cleaned_data.head(line_count).iterrows():
+
             coordinates = row['coordinates']  # Liste de coordonnées pour cette ligne
 
             if coordinates and len(coordinates) > 0:
-                filtered_coordinates = [(lat, lon) for lon, lat in coordinates]
+                # Ajouter une vérification pour s'assurer que chaque élément est un tuple avec 2 éléments
+                filtered_coordinates = []
+                for coord in coordinates:
+                    if isinstance(coord, (list, tuple)) and len(coord) == 2:
+                        lon, lat = coord
+                        filtered_coordinates.append((lat, lon))
+                    else:
+                        #cette ligne permet de connaitre les coordonnées ignorées 
+                        #print(f"Invalid coordinate at index {index}: {coord}")
+                        continue
 
                 if len(filtered_coordinates) >= 2:
-                    folium.PolyLine(locations=filtered_coordinates, color="blue", weight=5, opacity=1).add_to(map_object)
+                    folium.PolyLine(locations=filtered_coordinates, color="royalblue", weight=1, opacity=1).add_to(map_object)
 
                     #folium.Marker(
                         #location=filtered_coordinates[0],
