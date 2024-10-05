@@ -14,7 +14,7 @@ class Affichage:
 
     def create_map(self):
         map_center = [46.603354, 1.888334]  # Coordonnées approximatives du centre de la France
-        map_object = folium.Map(location=map_center, zoom_start=6, tiles='OpenStreetMap')
+        map_object = folium.Map(location=map_center, zoom_start=6, tiles='cartodb positron')
 
 
         # nombre de lignes sélectionnées (3347 le max)
@@ -30,10 +30,10 @@ class Affichage:
                 if len(filtered_coordinates) >= 2:
                     folium.PolyLine(locations=filtered_coordinates, color="blue", weight=5, opacity=1).add_to(map_object)
 
-                    folium.Marker(
-                        location=filtered_coordinates[0],
-                        popup=f"Code ligne: {row['code_ligne']}, Statut: {row['statut']}"
-                    ).add_to(map_object)
+                    #folium.Marker(
+                        #location=filtered_coordinates[0],
+                        #popup=f"Code ligne: {row['code_ligne']}, Statut: {row['statut']}"
+                    #).add_to(map_object)
 
         return map_object
 

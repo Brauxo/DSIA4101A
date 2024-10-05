@@ -1,100 +1,146 @@
+/* Reset margins and paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Assure que la page occupe toute la hauteur */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Conteneur principal qui occupe toute la hauteur */
+.page-content-wrapper {
+    flex: 1;  /* Prend tout l'espace disponible restant après le header */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* Header */
 .header {
-    display: flex;  /* Utilise le flex pour l'alignement */
-    justify-content: center;  /* Centre le contenu */
-    align-items: center;  /* Centre verticalement */
-    background-color: #003366;  /* Fond bleu foncé */
-    height: 3rem;  /* Hauteur réduite */
-    padding: 10px;  /* Paddings pour un espacement confortable */
-    border-radius: 0;  /* Pas de coins arrondis */
-    position: fixed;  /* Fixe le header en haut */
-    top: 0;  /* Colle le header au haut de la page */
-    left: 0;  /* Colle le header au bord gauche */
-    right: 0;  /* Colle le header au bord droit */
-    z-index: 1;  /* Assure que le header reste au-dessus du contenu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #122d86;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 /* Title */
 .header-title {
-    color: #ffffff;  /* Couleur du texte du titre en blanc */
-    font-size: 25px;  /* Taille du texte réduite */
-    margin: 0;  /* Pas de marges */
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
 }
 
-/* Horizontal Rule */
-.header-hr {
-    border: none;  /* Pas de ligne horizontale si désiré */
-}
-
-
-/* Navbar */
+/* Navbar centrée avec une largeur fixe */
 .navbar {
     display: flex;
-    justify-content: center;  /* Centre les éléments de la navbar */
-    background-color: #e3dede;  /* Fond gris clair ou toute autre couleur désirée */
-    height: 2rem;  /* Hauteur de la navbar */
-    align-items: center;  /* Centre verticalement les éléments */
-    border-radius: 10px;  /* Coins arrondis pour donner un effet de bulle */
-    padding: 5px;  /* Paddings pour un espacement confortable */
-    position: fixed;  /* Fixe la navbar */
-    top: 3rem;  /* Place la navbar juste en dessous du header */
-    left: 870px;  /* Colle la navbar au bord gauche avec un espacement */
-    right: 870px;  /* Colle la navbar au bord droit avec un espacement */
-    z-index: 1;  /* Assure que la navbar reste au-dessus du contenu */
-    box-shadow: none;  /* Pas d'ombre pour une apparence plate */
+    justify-content: center;
+    background-color: rgba(227, 222, 222, 0.7); /* Fond continu avec transparence */
+    border-radius: 15px;  /* Coins arrondis autour de l'ensemble des icônes */
+    padding: 5px 20px;  /* Un padding autour des icônes pour aérer */
+    position: relative;
+    top: -1rem;  /* Ajustement pour placer la navbar correctement sous le header */
+    z-index: 1000;  /* S'assure que la navbar reste au-dessus des autres contenus */
+    box-shadow: none;
+    width: 150px;  /* Largeur fixe pour la navbar */
+    margin: 0 auto;  /* Centre la navbar sur la page */
+    backdrop-filter: blur(10px); /* Ajoute un effet de flou derrière la barre */
 }
 
 /* Links in the Navbar */
 .navbar a {
-    color: #1A1A1A;  /* Couleur des liens en gris foncé */
-    text-decoration: none;  /* Pas de soulignement */
-    margin: 0 15px;  /* Espacement entre les liens */
-    font-size: 16px;  /* Taille du texte des liens */
+    color: #1A1A1A;
+    text-decoration: none;
+    margin: 0 10px;  /* Réduit l'espacement entre les icônes */
+    font-size: 16px;
+    position: relative;
 }
 
-/* Style pour le hover sur les liens */
-.navbar a:hover {
-    text-decoration: underline;  /* Souligne les liens au survol */
-    color: #003366;  /* Change la couleur des liens au survol */
-}
-
-/* Icons in the Navbar */
+/* Icônes dans la Navbar */
 .nav-icon {
-    width: 48px;  /* Ajustez la taille de l'icône */
-    height: 48px;  /* Ajustez la taille de l'icône */
-    margin-right: 5px;  /* Espacement entre l'icône et le texte */
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;  /* Animation de zoom au survol */
 }
 
-/*CARTE
-/* Styles pour l'iframe de la carte */
-.map-iframe {
-    margin-top: 20px;  /* Ajoute un espace de 20px sous le header */
+/* Agrandit les icônes au survol */
+.navbar a:hover .nav-icon {
+    transform: scale(1.4);  /* Effet de zoom */
 }
 
+/* Texte au survol pour chaque lien */
+.home-icon:hover::after,
+.map-icon:hover::after,
+.chart-icon:hover::after,
+.us-icon:hover::after {
+    content: attr(data-text);  /* Texte affiché au survol */
+    position: absolute;
+    top: 40px;  /* Positionne le texte en dessous de l'icône */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.8);  /* Fond clair et transparent pour le texte */
+    padding: 2px 5px;
+    border-radius: 5px;
+    white-space: nowrap;  /* Empêche le retour à la ligne */
+    z-index: 10;
+}
+
+/* Texte spécifique pour chaque icône */
+.home-icon:hover::after {
+    content: 'Home';
+}
+
+.map-icon:hover::after {
+    content: 'Map';
+}
+
+.chart-icon:hover::after {
+    content: 'Bar Chart';
+}
+
+.us-icon:hover::after {
+    content: 'About us';
+}
 
 /* Footer */
 .footer {
     display: flex;
     justify-content: space-between;
-    color: #ffffff;  /* Texte en blanc */
-    background-color: #003366;  /* Fond bleu foncé */
-    height: 3rem;  /* Hauteur réduite */
+    color: #ffffff;
+    background-color: #122d86;
+    height: 2rem;
     align-items: center;
-    padding: 10px;  /* Paddings pour un espacement confortable */
-    border-radius: 0;  /* Pas de coins arrondis */
-    position: fixed;  /* Fixe le footer en bas */
-    bottom: 0;  /* Colle le footer au bas de la page */
-    left: 0;  /* Colle le footer au bord gauche */
-    right: 0;  /* Colle le footer au bord droit */
-    z-index: 1;  /* Assure que le footer reste au-dessus du contenu */
+    padding: 10px;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Si le contenu est court, le footer se place en bas de la page */
+.page-content {
+    flex-grow: 1;
 }
 
 /* Logo */
 .logo {
     border-radius: 5px;
-    max-width: 150px;  /* Limite la largeur des logos */
-    max-height: 80px;  /* Limite la hauteur des logos */
-    margin: 0 15px;  /* Marges pour espacer les logos */
+    max-width: 150px;
+    max-height: 80px;
+    margin: 0 15px;
 }
 
 /* Unit */
@@ -102,14 +148,14 @@
     text-align: center;
     text-decoration: underline;
     font-size: 12px;
-    margin: 0;  /* Retire les marges par défaut */
+    margin: 0;
 }
 
 /* Credits */
 .credits {
     text-align: center;
     font-size: 12px;
-    margin: 0;  /* Retire les marges par défaut */
+    margin: 0;
 }
 
 /* Copyright */
@@ -117,5 +163,5 @@
     text-align: center;
     font-style: italic;
     font-size: 12px;
-    margin: 0;  /* Retire les marges par défaut */
+    margin: 0;
 }

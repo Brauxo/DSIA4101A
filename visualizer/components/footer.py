@@ -13,7 +13,7 @@ def create_footer(app):
     """
     return html.Footer([
         html.Div([
-            # Logo Université Gustave Eiffel
+            # Logo Esiee
             html.Img(
                 src=app.get_asset_url('logo.png'),
                 className='logo'

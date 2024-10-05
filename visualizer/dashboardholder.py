@@ -1,10 +1,9 @@
 import dash
 from dash import dcc, html
-from visualizer.components.header import create_header
-from visualizer.components.footer import create_footer
-from visualizer.components.navbar import create_navbar
+from visualizer.simple_page_home import simple_page_home
 from visualizer.simple_page import simple_page
 from visualizer.simple_page2 import simple_page2
+from visualizer.simple_page3 import simple_page3
 from dash.dependencies import Input, Output
 
 class dashboardholder:
@@ -25,11 +24,15 @@ class dashboardholder:
         )
         def display_page(pathname):
             if pathname == '/':
-                return simple_page(self.app, self.data_frame)  # Default page
+                return simple_page_home(self.app)  # Default page
+            elif pathname == '/page-1':
+                return simple_page(self.app,self.data_frame)  # Page 2
             elif pathname == '/page-2':
                 return simple_page2(self.app,self.data_frame)  # Page 2
+            elif pathname == '/page-3':
+                return simple_page3(self.app,self.data_frame)  # Page 3
             else:
-                return simple_page(self.app, self.data_frame)  # Fallback to default
+                return simple_page_home(self.app, self.data_frame)  # Fallback to default
 
     def run(self):
         self.app.run_server(debug=True)
