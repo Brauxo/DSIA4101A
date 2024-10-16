@@ -9,7 +9,8 @@ from dash.dependencies import Input, Output
 class dashboardholder:
     def __init__(self, dataframe):
         self.data_frame = dataframe
-        self.app = dash.Dash(__name__)
+        # Initialize Dash app with suppress_callback_exceptions=True
+        self.app = dash.Dash(__name__, suppress_callback_exceptions=True)
 
         # Set up the initial layout with dcc.Location
         self.app.layout = html.Div([
@@ -26,13 +27,13 @@ class dashboardholder:
             if pathname == '/':
                 return simple_page_home(self.app)  # Default page
             elif pathname == '/page-1':
-                return simple_page(self.app,self.data_frame)  # Page 2
+                return simple_page(self.app, self.data_frame)  # Page 1
             elif pathname == '/page-2':
-                return simple_page2(self.app,self.data_frame)  # Page 2
+                return simple_page2(self.app, self.data_frame)  # Page 2
             elif pathname == '/page-3':
-                return simple_page3(self.app,self.data_frame)  # Page 3
+                return simple_page3(self.app, self.data_frame)  # Page 3
             else:
-                return simple_page_home(self.app, self.data_frame)  # Fallback to default
+                return simple_page_home(self.app)  # Fallback to default
 
     def run(self):
         self.app.run_server(debug=True)
