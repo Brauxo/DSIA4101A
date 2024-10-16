@@ -3,6 +3,13 @@
 **Projet de cours - Filière Data Science :**  
 Ce projet, réalisé en binôme, porte sur l'analyse des voies ferroviaires en France.
 
+# Jeu de données 
+
+Pour la réalisation de ce projet, nous avons utilisé différentes données issues de la SNCF, soigneusement triées par Mathias Maestri, que nous tenons à remercier chaleureusement. Ces données ont ensuite été exportées dans un fichier au format .geojson.
+
+[Jeu de données utilisé : Données réseau ferroviaire national concaténées](https://www.data.gouv.fr/fr/datasets/donnees-reseau-ferroviaire-national-concatenees/)
+[données SNCF](https://data.sncf.com/pages/accueil/)
+
 # Sommaire
 
 ## Guide de l'application
