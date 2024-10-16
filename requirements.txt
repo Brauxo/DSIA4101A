@@ -3,3 +3,5 @@ dash
 plotly
 folium
 requests
+statistics
+numpy

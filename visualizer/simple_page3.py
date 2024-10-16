@@ -32,7 +32,7 @@ def simple_page3(app, data_frame):
             }),
 
             html.Div([  # Deuxième case pour la seconde photo, nom et texte
-                html.H3("Owen BRAUX", style={'marginTop': '0px', 'marginBottom': '10px', 'textAlign': 'center'}),  # Nom ajouté au-dessus de la photo
+                html.H3("Owen BRAUX", style={'marginTop': '0px', 'marginBottom': '0px', 'textAlign': 'center'}),  # Nom ajouté au-dessus de la photo
                 html.Img(src='/assets/owen.jpg', style={'width': '150px', 'height': '200px', 'borderRadius': '10px', 'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto'}),
                 # Image centrée dans la case
                 html.P("Actuellement étudiant, en 4ème année à l'ESIEE Paris. Je suis passionné par l'analyse de données et l'intelligence artificielle, j'ai choisi de suivre la filière DSIA pour approfondir mes connaissances et compétences dans ces domaines en plein essor.",
