@@ -74,7 +74,7 @@ def simple_page3(app, data_frame):
 
             # Python logo
             html.Div([
-                html.Img(src='/assets/python_logo.jpg',
+                html.Img(src='/assets/python_logo.png',
                          style={'width': 'auto', 'height': '80px', 'display': 'block', 'marginLeft': 'auto',
                                 'marginRight': 'auto'}),
             ], style={

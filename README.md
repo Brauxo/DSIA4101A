@@ -82,6 +82,26 @@ Copiez-collez cette adresse dans un navigateur web pour accéder à l'applicatio
 
 Cette section présentera le fonctionnement du Dashboard une fois lancé, ainsi que ses différentes fonctionnalités.
 
+### Navigation dans le Dashboard
+
+
+### Page d'accueil 
+
+
+
+### Page de la carte 
+
+
+
+### Page des graphiques 
+
+
+
+### Page d'information sur nous et ce projet
+
+
+
+
 ## 4 - Arborescence des fichiers
 
 Voici un aperçu de l'arborescence du projet, y compris le fichier `style.css` utilisé pour le design de l'application. *(Section à compléter)*  

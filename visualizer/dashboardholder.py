@@ -5,16 +5,21 @@ from visualizer.simple_page import simple_page
 from visualizer.simple_page2 import simple_page2
 from visualizer.simple_page3 import simple_page3
 from dash.dependencies import Input, Output
+import dash_bootstrap_components as dbc
 
 class dashboardholder:
     def __init__(self, dataframe):
         self.data_frame = dataframe
         self.app = dash.Dash(__name__)
 
+        # Utilisatiion d'un thème de dashboard 
+        theme = dbc.themes.MORPH
+        self.app = dash.Dash(__name__, external_stylesheets=[theme])
+
         # Créer un premier layout
-        self.app.layout = html.Div([
+        self.app.layout = html.Div(style={'height': '100vh', 'width': '100vw'}, children=[
             dcc.Location(id='url', refresh=False),  # Track the URL
-            html.Div(id='page-content'),  # Content changes based on the URL
+            html.Div(id='page-content', style={'height': '100%', 'width': '100%'})  # Responsive page content
         ])
 
         # Definit les callbacks

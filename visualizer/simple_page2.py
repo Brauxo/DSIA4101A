@@ -20,17 +20,20 @@ def simple_page2(app, data_frame):
 
 
     # Disposition des graphiques sur la même page
-    layout = html.Div([
+    layout =  html.Div(style={'height': '100vh', 'width': '100vw'}, children=[
         create_header(),
         create_navbar(),
         html.H1("Page 2 - Analyses et Visualisations des Données de la Ligne"),
 
         # Graphique 1 : Histogramme des Positions de Début
-        html.H2("Histogramme des Positions de Début"),
-        dcc.Graph(
-            id='histogram-page-2',
-            figure=fig_histogram
-        ),
+        html.Div(style={'padding': '20px', 'height': '85vh', 'width': '100%'}, children=[  # Responsive container for the graph
+            html.H2("Histogramme des Positions de Début"),
+            dcc.Graph(
+                id='histogram-page-2',
+                figure=fig_histogram,
+                style={'height': '100%', 'width': '100%'}  # Make the graph fill the container
+            )
+        ]),
         
         create_footer(app)
     ])

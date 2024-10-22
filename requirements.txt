@@ -4,4 +4,4 @@ plotly
 folium
 requests
 statistics
-numpy
+dash-bootstrap-components

@@ -66,8 +66,7 @@ def simple_page(app, data_frame):
         return map_html
 
     # Layout de la page
-    layout = html.Div(
-        [
+    layout = html.Div(style={'height': '100vh', 'width': '100vw'}, children=[
             create_header(),
             create_navbar(),
             html.H1("Gapminder Dashboard - Carte"),
@@ -83,7 +82,7 @@ def simple_page(app, data_frame):
                 clearable=False,
                 style={'width': '50%', 'margin': 'auto'}
             ),
-            html.Iframe(id='map', srcDoc=map_html, width='100%', height='600px', className='map-iframe'),
+            html.Iframe(id='map', srcDoc=map_html, width='100%', height='800px', className='map-iframe'),
             create_footer(app)
         ]
     )

@@ -34,20 +34,6 @@ class cleaning:
             geometry = feature.get('geometry', None)
             coordinates = geometry.get('coordinates', None) if geometry else None
 
-            #Ces deux prochaines lignes traitentent 
-
-            # Transformation des données vitesses afin d'avoir seulement un dictionnaire vitesse
-            vitesses_clean = []
-            if vitesses:
-                for vitesse in vitesses:
-                    if 'detail' in vitesse:
-                        # Tente de convertir en entier, sinon mets None
-                        try:
-                            vitesses_clean.append(int(vitesse.get('detail')))
-                        except (ValueError, TypeError):
-                            vitesses_clean.append(None)
-
-
 
             #ajoute dans le dictionnaire data_list ce qui a été extrait
             data_list.append({
@@ -61,7 +47,7 @@ class cleaning:
                 'cantonnements': cantonnements,
                 'electrifications': electrifications,
                 'type_ligne': type_ligne,
-                'vitesses': vitesses_clean
+                'vitesses': vitesses
             })
 
         #création du dataframe

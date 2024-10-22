@@ -22,8 +22,8 @@ html, body {
     justify-content: center;
     align-items: center;
     background-color: #122d86;
-    height: 2rem;
-    padding: 10px;
+    height: 3.5rem;
+    padding: 20px;
     border-radius: 0;
     position: relative;
     top: 0;
@@ -35,7 +35,9 @@ html, body {
 /* Title */
 .header-title {
     color: #ffffff;
-    font-size: 25px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px;
+    font-weight: bold; 
     margin: 0;
 }
 
@@ -43,14 +45,14 @@ html, body {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: rgba(227, 222, 222, 0.7); /* Fond continu avec transparence */
+        background-color: rgba(209, 208, 208, 0.911); /* Fond continu avec transparence */
     border-radius: 15px;  /* Coins arrondis autour de l'ensemble des icônes */
     padding: 5px 20px;  /* Un padding autour des icônes pour aérer */
     position: relative;
-    top: -1rem;  /* Ajustement pour placer la navbar correctement sous le header */
+    top: 0rem;  /* Ajustement pour placer la navbar correct ement sous le header */
     z-index: 1000;  /* S'assure que la navbar reste au-dessus des autres contenus */
     box-shadow: none;
-    width: 150px;  /* Largeur fixe pour la navbar */
+    width: 400px;  /* Largeur fixe pour la navbar */
     margin: 0 auto;  /* Centre la navbar sur la page */
     backdrop-filter: blur(10px); /* Ajoute un effet de flou derrière la barre */
 }
@@ -59,15 +61,15 @@ html, body {
 .navbar a {
     color: #1A1A1A;
     text-decoration: none;
-    margin: 0 10px;  /* Réduit l'espacement entre les icônes */
-    font-size: 16px;
+    margin: 0 20px;  /* Réduit l'espacement entre les icônes */
+    font-size: 20px;
     position: relative;
 }
 
 /* Icônes dans la Navbar */
 .nav-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s ease-in-out;  /* Animation de zoom au survol */
 }
 
@@ -120,7 +122,7 @@ html, body {
     background-color: #122d86;
     height: 2rem;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
     border-radius: 0;
     left: 0;
     right: 0;
