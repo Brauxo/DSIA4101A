@@ -12,7 +12,7 @@ if __name__ == '__main__':
     dashboard = dashboardholder(df)
     #print(df)
 
-    # Lancer le dashboard en local
+    # Lancer le dashboard en local  
     dashboard.run()
  
 
