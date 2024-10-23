@@ -8,12 +8,13 @@ from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 
 class dashboardholder:
+    
     def __init__(self, dataframe):
         self.data_frame = dataframe
         self.app = dash.Dash(__name__)
 
         # Utilisatiion d'un thème de dashboard 
-        theme = dbc.themes.MORPH
+        theme = dbc.themes.LUX
         self.app = dash.Dash(__name__, external_stylesheets=[theme])
 
         # Créer un premier layout
