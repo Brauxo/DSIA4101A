@@ -1,4 +1,4 @@
-from dash import dcc, html, Input, Output
+from dash import dcc, html
 import folium
 import dash
 from visualizer.components.header import create_header
@@ -12,7 +12,7 @@ class Affichage:
 
     def create_map(self, filter_option="both"):
         map_center = [46.603354, 1.888334]
-        map_object = folium.Map(location=map_center, zoom_start=6, tiles='cartodb positron')
+        map_object = folium.Map(location=map_center, zoom_start=5, tiles='cartodb positron')
         line_count = 3347
 
         for index, row in self.cleaned_data.head(line_count).iterrows():
@@ -52,39 +52,40 @@ class Affichage:
         return map_object._repr_html_()
 
 
-# Fonction pour créer la page et gérer les callbacks
+# Fonction pour créer la page
 def simple_page(app, data_frame):
     affichage = Affichage(data_frame)
-    map_html = affichage.create_map(filter_option='both')
 
-    @app.callback(
-        Output('map', 'srcDoc'),
-        Input('lgv-dropdown', 'value'),
-    )
-    def update_map(selected_option):
-        map_html = affichage.create_map(filter_option=selected_option)
-        return map_html
+    # Création des cartes pour chaque option
+    map_both_html = affichage.create_map(filter_option='both')
+    map_lgv_html = affichage.create_map(filter_option='LGV')
+    map_classique_html = affichage.create_map(filter_option='classique')
+    map_lgvc_html = affichage.create_map(filter_option='LGVC')
 
-    # Layout de la page
-    layout = html.Div(style={'height': '100vh', 'width': '100vw'}, children=[
-            create_header(),
-            create_navbar(),
-            html.H1("Gapminder Dashboard - Carte"),
-            dcc.Dropdown(
-                id='lgv-dropdown',
-                options=[
-                    {'label': 'Toutes les lignes', 'value': 'both'},
-                    {'label': 'LGV', 'value': 'LGV'},
-                    {'label': 'Lignes classiques', 'value': 'classique'},
-                    {'label': 'LGV complété', 'value': 'LGVC'}
-                ],
-                value='both',
-                clearable=False,
-                style={'width': '50%', 'margin': 'auto'}
-            ),
-            html.Iframe(id='map', srcDoc=map_html, width='100%', height='800px', className='map-iframe'),
-            create_footer(app)
-        ]
-    )
+    # Layout de la page avec les cartes en grille
+    layout = html.Div(className="page-content-wrapper", children=[
+        create_header(),
+        create_navbar(),
+        html.H1("Gapminder Dashboard - Cartes", className="header-title"),
+        html.Div(className="map-grid", children=[
+            html.Div(className="map-item", children=[
+                html.H2("Toutes les lignes", className="map-title"),
+                html.Iframe(srcDoc=map_both_html, className="map-iframe"),
+            ]),
+            html.Div(className="map-item", children=[
+                html.H2("Lignes classiques", className="map-title"),
+                html.Iframe(srcDoc=map_classique_html, className="map-iframe"),
+            ]),
+            html.Div(className="map-item", children=[
+                html.H2("LGV", className="map-title"),
+                html.Iframe(srcDoc=map_lgv_html, className="map-iframe"),
+            ]),
+            html.Div(className="map-item", children=[
+                html.H2("LGV complété", className="map-title"),
+                html.Iframe(srcDoc=map_lgvc_html, className="map-iframe"),
+            ]),
+        ]),
+        create_footer(app)
+    ])
 
     return layout
