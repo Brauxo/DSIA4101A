@@ -17,12 +17,13 @@ Pour la réalisation de ce projet, nous avons utilisé différentes données iss
 1. [Prérequis d'installation](#1---Prérequis-dinstallation)
 2. [Lancer l'application](#2---Lancer-lapplication)
 3. [Présentation du Dashboard](#3---Présentation-du-dashboard)
-4. [Arborescence des fichiers](#4---Arborescence-des-fichiers)
 
 ## Analyse des données
 1. [Contexte](#1---Contexte)
 2. [Analyse des voies ferroviaires françaises](#2---Analyse-des-voies-ferroviaires-françaises)
 
+## Guide du developpeur
+1. [Arborescence des fichiers](#1---Arborescence-des-fichiers)
 ---
 
 # Guide de l'application
@@ -102,10 +103,6 @@ Cette section présentera le fonctionnement du Dashboard une fois lancé, ainsi 
 
 
 
-## 4 - Arborescence des fichiers
-
-Voici un aperçu de l'arborescence du projet, y compris le fichier `style.css` utilisé pour le design de l'application. *(Section à compléter)*  
-![image](https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91)
 
 ---
 
@@ -123,6 +120,12 @@ Cette section fournira un aperçu général du projet, de ses objectifs ainsi qu
 
 Cette section détaillera l'analyse des données ferroviaires françaises, y compris les statistiques clés et les insights obtenus à partir des données.
 
+---
+# Guide du developpeur
+## 1 - Arborescence des fichiers
+
+Voici un aperçu de l'arborescence du projet, y compris le fichier `style.css` utilisé pour le design de l'application. *(Section à compléter)*  
+![image](https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91)
 
 ### Suggestions d'améliorations futures
 
