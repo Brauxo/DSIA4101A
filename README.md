@@ -122,11 +122,12 @@ Cette section fournira un aperçu général du projet, de ses objectifs ainsi qu
 Cette section détaillera l'analyse des données ferroviaires françaises, y compris les statistiques clés et les insights obtenus à partir des données.
 
 ---
-# Guide du developpeur
+# Guide du développeur
+
 ## 1 - Contexte
 
-
 ## 2 - Architecture du code
+
 Nous avons structuré le projet en plusieurs fichiers Python et répertoires :
 
 - **main.py** : Point d’entrée du projet, coordonne les différentes étapes de traitement.
@@ -144,10 +145,18 @@ Nous avons structuré le projet en plusieurs fichiers Python et répertoires :
   - `components` : Sous-dossier pour les composants UI (ex. : en-tête, navigation, pied de page).
   - `assets` : Regroupe les fichiers visuels et CSS (images, icônes, style CSS pour le design du tableau de bord).
 
-Voici un aperçu de l'arborescence du projet, y compris le fichier `style.css` utilisé pour le design de l'application.
- *(IMAGE DOIT ETRE ACTUALISE)*   *(Section à compléter)*  
-![image](https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91)
-![image](https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356) *( a modif si on change de nom des trucs, j ai le code du mermaid)*
+Voici un aperçu visuel de l'arborescence du projet :
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91" alt="Aperçu de l'arborescence du projet" width="500"/>
+</div>
+
+Représentation alternative de l'architecture du projet :
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width="500"/>
+</div>
+
 
 ### Suggestions d'améliorations futures
 
