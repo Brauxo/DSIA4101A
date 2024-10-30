@@ -148,13 +148,13 @@ Nous avons structuré le projet en plusieurs fichiers Python et répertoires afi
   - `assets` : Regroupe les fichiers visuels et CSS (images, icônes, style CSS pour le design du tableau de bord).
 
 Voici un aperçu visuel de l'arborescence du projet :
-
+*(mettre a jour une fois projet finis)*
 <div align="center">
     <img src="https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91" alt="Aperçu de l'arborescence du projet" width="65%"/>
 </div>
 
 Représentation alternative de l'architecture du projet :
-
+*(mettre a jour si besoin j ai le code)*
 <div align="center">
     <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width="100%"/>
 </div>
@@ -164,8 +164,8 @@ Représentation alternative de l'architecture du projet :
 ### Ajouter une Nouvelle Page
 
 1. **Créer un Fichier pour la Page** : Créez un nouveau fichier dans le dossier `visualizer` pour définir votre page, par exemple `simple_page_new.py`.
-2. **Définir la Structure de la Page** : Dans ce fichier, créez une fonction pour définir la structure de la page :
-
+2. **Définir la Structure de la Page** : Dans le fichier crée, créez une fonction pour définir la structure de la page. *(mettre capture semblant code)*
+3. **Ajouter la Page au Tableau de Bord** : Ouvrez dashboardholder.py et a ajouter simple_page_new.*(mettre capture de la ou il faut ajouter)*
 
 
 ### Suggestions d'améliorations futures
