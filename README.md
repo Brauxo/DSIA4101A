@@ -164,6 +164,23 @@ Représentation alternative de l'architecture du projet :
     <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width="100%"/>
 </div>
 
+Il est essentiel de respecter le principe de **compartimentation** en développement, afin d'éviter un "code spaghetti" difficile à maintenir. Dans notre projet, chaque composant est isolé dans un module spécifique pour séparer les responsabilités et faciliter l'évolution du code.
+
+Nous avons structuré le projet en trois grands modules :
+
+- **data** : responsable de la gestion des données, depuis l'extraction initiale jusqu'au nettoyage.
+- **visualizer** : dédié à la présentation des données sous forme de tableau de bord, avec des pages spécifiques et des composants UI (en-tête, navigation, etc.).
+- **assets** : contient les ressources statiques comme les images et les fichiers CSS pour styliser le tableau de bord.
+
+Cette organisation permet une grande flexibilité. Par exemple, si nous disposons déjà de données nettoyées, nous pouvons sauter la partie extraction sans impacter la partie visualisation. Chaque module comporte des classes et des fonctions qui rendent le code plus lisible, facilitant ainsi la maintenabilité. Nous avons choisi d'utiliser des classes pour deux raisons principales :
+
+1. **Lisibilité** : les classes aident à identifier clairement les objets manipulés et les actions associées, ce qui rend le code plus intuitif.
+2. **Réutilisation des instances** : en regroupant les attributs et méthodes dans des objets, il est possible de passer facilement des informations d'un segment de code à un autre.
+
+Enfin, le dossier **assets** inclut un fichier CSS pour minimiser la duplication de styles dans le code. Cette approche nous permet de modifier facilement l'apparence du tableau de bord sans avoir à toucher au code Python, en se concentrant simplement sur les styles dans le CSS.
+
+
+
 ## 3 - Ajouter une page
 1. **Créer un Fichier pour la page** : Créez un nouveau fichier dans le dossier `visualizer` pour définir votre page, par exemple `simple_page_new.py`.
 2. **Définir la Structure de la page** : Dans le fichier crée, créez une fonction pour définir la structure de la page.
