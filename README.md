@@ -25,6 +25,7 @@ Pour la réalisation de ce projet, nous avons utilisé différentes données iss
 ## Guide du developpeur
 1. [Contexte](#1---Contexte)
 2. [Arborescence des fichiers](#2---Arborescence-des-fichiers)
+3. [Ajouter une page](#2---Ajouter-une-page)
 ---
 
 # Guide de l'application
@@ -163,14 +164,14 @@ Représentation alternative de l'architecture du projet :
     <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width="100%"/>
 </div>
 
-## 3 - Ajouter une Page
-1. **Créer un Fichier pour la Page** : Créez un nouveau fichier dans le dossier `visualizer` pour définir votre page, par exemple `simple_page_new.py`.
-2. **Définir la Structure de la Page** : Dans le fichier crée, créez une fonction pour définir la structure de la page.
+## 3 - Ajouter une page
+1. **Créer un Fichier pour la page** : Créez un nouveau fichier dans le dossier `visualizer` pour définir votre page, par exemple `simple_page_new.py`.
+2. **Définir la Structure de la page** : Dans le fichier crée, créez une fonction pour définir la structure de la page.
 <div align="center">
     <img src="https://github.com/user-attachments/assets/a3d4d854-c3ec-448a-9c95-31a2c3bcb9fe" alt="image"width="35%"/>
 </div>
 
-3. **Ajouter la Page au Tableau de Bord** : Ouvrez dashboardholder.py et ajouter simple_page_new.
+3. **Ajouter la page au Tableau de Bord** : Ouvrez dashboardholder.py et ajouter simple_page_new.
 <div align="center">
     <img src="https://github.com/user-attachments/assets/7cce7a37-90ff-4b4a-b29a-58152bdf932d" alt="image"width="50%"/>
 </div>
