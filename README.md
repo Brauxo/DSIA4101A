@@ -152,17 +152,19 @@ Nous avons structuré le projet en plusieurs fichiers Python et répertoires afi
   - `components` : Sous-dossier pour les composants UI (ex. : en-tête, navigation, pied de page).
   - `assets` : Regroupe les fichiers visuels et CSS (images, icônes, style CSS pour le design du tableau de bord).
 
-Voici un aperçu visuel de l'arborescence du projet :
-*(mettre a jour une fois projet finis)*
+Voici un aperçu visuel de l'arborescence du projet : *(mettre à jour une fois le projet terminé)*
+
 <div align="center">
     <img src="https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91" alt="Aperçu de l'arborescence du projet" width="65%"/>
 </div>
 
-Représentation alternative de l'architecture du projet :
-*(mettre a jour si besoin j ai le code)*
+Représentation alternative de l'architecture du projet : *(mettre à jour si besoin, code Mermaid disponible)*
+
 <div align="center">
     <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width="100%"/>
 </div>
+
+### Principe de compartimentation
 
 Il est essentiel de respecter le principe de **compartimentation** en développement, afin d'éviter un "code spaghetti" difficile à maintenir. Dans notre projet, chaque composant est isolé dans un module spécifique pour séparer les responsabilités et faciliter l'évolution du code.
 
