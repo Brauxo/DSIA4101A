@@ -126,9 +126,11 @@ Cette section détaillera l'analyse des données ferroviaires françaises, y com
 
 ## 1 - Contexte
 
+Ce guide développeur présente les objectifs, l'architecture, et la structure de notre projet de visualisation de données. Il est conçu pour faciliter l’ajout de nouvelles fonctionnalités et assurer la maintenabilité du code.
+
 ## 2 - Architecture du code
 
-Nous avons structuré le projet en plusieurs fichiers Python et répertoires :
+Nous avons structuré le projet en plusieurs fichiers Python et répertoires afin de compartimenter chaque tâche pour plus de clarté et de modularité.
 
 - **main.py** : Point d’entrée du projet, coordonne les différentes étapes de traitement.
 
@@ -148,14 +150,22 @@ Nous avons structuré le projet en plusieurs fichiers Python et répertoires :
 Voici un aperçu visuel de l'arborescence du projet :
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91" alt="Aperçu de l'arborescence du projet" width=65%/>
+    <img src="https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91" alt="Aperçu de l'arborescence du projet" width="65%"/>
 </div>
 
 Représentation alternative de l'architecture du projet :
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width=100%/>
+    <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width="100%"/>
 </div>
+
+## 3 - Ajouter une Page ou un Graphique
+
+### Ajouter une Nouvelle Page
+
+1. **Créer un Fichier pour la Page** : Créez un nouveau fichier dans le dossier `visualizer` pour définir votre page, par exemple `simple_page_new.py`.
+2. **Définir la Structure de la Page** : Dans ce fichier, créez une fonction pour définir la structure de la page :
+
 
 
 ### Suggestions d'améliorations futures
