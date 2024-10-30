@@ -170,7 +170,7 @@ Représentation alternative de l'architecture du projet :
     <img src="https://github.com/user-attachments/assets/a3d4d854-c3ec-448a-9c95-31a2c3bcb9fe" alt="image"width="35%"/>
 </div>
 
-3. **Ajouter la Page au Tableau de Bord** : Ouvrez dashboardholder.py et a ajouter simple_page_new.
+3. **Ajouter la Page au Tableau de Bord** : Ouvrez dashboardholder.py et ajouter simple_page_new.
 <div align="center">
     <img src="https://github.com/user-attachments/assets/7cce7a37-90ff-4b4a-b29a-58152bdf932d" alt="image"width="50%"/>
 </div>
