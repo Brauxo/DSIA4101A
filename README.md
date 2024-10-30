@@ -165,7 +165,7 @@ Représentation alternative de l'architecture du projet :
 3. **Ajouter la Page au Tableau de Bord** : Ouvrez dashboardholder.py et a ajouter simple_page_new.*(mettre capture de la ou il faut ajouter)*
 
 
-### Suggestions d'améliorations futures
+## 4 - Suggestions d'améliorations futures
 
 - Compléter les sections incomplètes (présentation du dashboard, contexte, analyse).
 - Ajouter une description détaillée de l'interface du dashboard.
