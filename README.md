@@ -138,7 +138,7 @@ Nous avons structuré le projet en plusieurs fichiers Python et répertoires afi
 
 - **main.py** : Point d’entrée du projet, coordonne les différentes étapes de traitement.
 
-### Dossiers Modules
+### Les dossiers
 
 - **data** : contient les scripts de gestion des données.
   - `extract.py` : Récupération et extraction des données initiales.
