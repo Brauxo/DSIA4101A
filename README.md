@@ -148,7 +148,7 @@ Nous avons structuré le projet en plusieurs fichiers Python et répertoires :
 Voici un aperçu visuel de l'arborescence du projet :
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91" alt="Aperçu de l'arborescence du projet" width=80%/>
+    <img src="https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91" alt="Aperçu de l'arborescence du projet" width=65%/>
 </div>
 
 Représentation alternative de l'architecture du projet :
