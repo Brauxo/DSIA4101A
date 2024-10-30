@@ -129,17 +129,20 @@ Cette section détaillera l'analyse des données ferroviaires françaises, y com
 ## 2 - Architecture du code
 Nous avons structuré le projet en plusieurs fichiers Python et répertoires :
 
-main.py - Point d’entrée du projet, coordonne les différentes étapes de traitement.
-Dossiers Modules :
-data : contient les scripts de gestion des données.
-extract.py - Récupération et extraction des données initiales.
-cleaning.py - Nettoyage et préparation des données pour analyse.
-data.py - Utilitaires supplémentaires pour la gestion de données.
-visualizer : modules responsables de la création du tableau de bord et de la visualisation.
-dashboardholder.py - Gère l’interface du tableau de bord principal.
-simple_page*.py - Différentes pages de visualisation (accueil, pages spécifiques).
-components - Sous-dossier pour les composants UI (ex. : en-tête, navigation, pied de page).
-assets - Regroupe les fichiers visuels et CSS (images, icônes, style CSS pour le design du tableau de bord).
+- **main.py** : Point d’entrée du projet, coordonne les différentes étapes de traitement.
+
+### Dossiers Modules
+
+- **data** : contient les scripts de gestion des données.
+  - `extract.py` : Récupération et extraction des données initiales.
+  - `cleaning.py` : Nettoyage et préparation des données pour analyse.
+  - `data.py` : Utilitaires supplémentaires pour la gestion de données.
+
+- **visualizer** : modules responsables de la création du tableau de bord et de la visualisation.
+  - `dashboardholder.py` : Gère l’interface du tableau de bord principal.
+  - `simple_page*.py` : Différentes pages de visualisation (accueil, pages spécifiques).
+  - `components` : Sous-dossier pour les composants UI (ex. : en-tête, navigation, pied de page).
+  - `assets` : Regroupe les fichiers visuels et CSS (images, icônes, style CSS pour le design du tableau de bord).
 
 Voici un aperçu de l'arborescence du projet, y compris le fichier `style.css` utilisé pour le design de l'application.
  *(IMAGE DOIT ETRE ACTUALISE)*   *(Section à compléter)*  
