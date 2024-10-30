@@ -23,7 +23,8 @@ Pour la réalisation de ce projet, nous avons utilisé différentes données iss
 2. [Analyse des voies ferroviaires françaises](#2---Analyse-des-voies-ferroviaires-françaises)
 
 ## Guide du developpeur
-1. [Arborescence des fichiers](#1---Arborescence-des-fichiers)
+1. [Contexte](#1---Contexte)
+2. [Arborescence des fichiers](#2---Arborescence-des-fichiers)
 ---
 
 # Guide de l'application
@@ -123,6 +124,9 @@ Cette section détaillera l'analyse des données ferroviaires françaises, y com
 ---
 # Guide du developpeur
 ## 1 - Arborescence des fichiers
+
+
+## 2 - Arborescence des fichiers
 
 Voici un aperçu de l'arborescence du projet, y compris le fichier `style.css` utilisé pour le design de l'application. *(Section à compléter)*  
 ![image](https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91)
