@@ -159,10 +159,7 @@ Représentation alternative de l'architecture du projet :
     <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width="100%"/>
 </div>
 
-## 3 - Ajouter une Page ou un Graphique
-
-### Ajouter une Nouvelle Page
-
+## 3 - Ajouter une Page
 1. **Créer un Fichier pour la Page** : Créez un nouveau fichier dans le dossier `visualizer` pour définir votre page, par exemple `simple_page_new.py`.
 2. **Définir la Structure de la Page** : Dans le fichier crée, créez une fonction pour définir la structure de la page. *(mettre capture semblant code)*
 3. **Ajouter la Page au Tableau de Bord** : Ouvrez dashboardholder.py et a ajouter simple_page_new.*(mettre capture de la ou il faut ajouter)*
