@@ -131,6 +131,7 @@ Cette section détaillera l'analyse des données ferroviaires françaises, y com
 Voici un aperçu de l'arborescence du projet, y compris le fichier `style.css` utilisé pour le design de l'application.
  *(IMAGE DOIT ETRE ACTUALISE)*   *(Section à compléter)*  
 ![image](https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91)
+![image](https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356) *( a modif si on change de nom des trucs, j ai le code du mermaid)*
 
 ### Suggestions d'améliorations futures
 
