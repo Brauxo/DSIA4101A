@@ -94,18 +94,6 @@ Cette section présentera le fonctionnement du Dashboard une fois lancé, ainsi 
 
 ### Page de la carte 
 
-#### Analyse Ligne à grande vitesse (LGV)
-<div align="center">
-  <img src=![img.png]/>
-</div>
-La première carte montre les lignes à grande vitesse (LGV) générées à partir des données. Le critère pour qu'une ligne soit considérée comme LGV est une vitesse maximale supérieure à 250 km/h. Cependant, après une vérification rapide, il apparaît que deux lignes LGV manquent sur cette carte.
-
-La seconde carte ajoute ces deux lignes manquantes, qui ont été incluses manuellement. L'absence de ces lignes dans la première carte s'explique par des données incomplètes : la vitesse n'est pas renseignée pour ces deux lignes dans les données.
-
-##### Complément d'analyse
-
-En observant les cartes, on remarque que la majorité des lignes LGV partent ou arrivent à Paris, ce qui souligne un certain phénomène d'enclavement du territoire. Cette concentration des infrastructures autour de Paris pourrait indiquer une centralisation des transports ferroviaires, reliant principalement la capitale aux autres grandes villes, mais créant moins de connexions directes entre les régions.
-
 
 ### Page des graphiques 
 
@@ -131,7 +119,17 @@ Cette section fournira un aperçu général du projet, de ses objectifs ainsi qu
 
 *(Section à compléter)*
 
-Cette section détaillera l'analyse des données ferroviaires françaises, y compris les statistiques clés et les insights obtenus à partir des données.
+#### Analyse Ligne à grande vitesse (LGV)
+<div align="center">
+  <img src=![https://github.com/user-attachments/assets/637632e5-2f2e-4f0c-b79e-0ed82112f44e]/>
+</div>
+La première carte montre les lignes à grande vitesse (LGV) générées à partir des données. Le critère pour qu'une ligne soit considérée comme LGV est une vitesse maximale supérieure à 250 km/h. Cependant, après une vérification rapide, il apparaît que deux lignes LGV manquent sur cette carte.
+
+La seconde carte ajoute ces deux lignes manquantes, qui ont été incluses manuellement. L'absence de ces lignes dans la première carte s'explique par des données incomplètes : la vitesse n'est pas renseignée pour ces deux lignes dans les données.
+
+##### Complément d'analyse
+
+En observant les cartes, on remarque que la majorité des lignes LGV partent ou arrivent à Paris, ce qui souligne un certain phénomène d'enclavement du territoire. Cette concentration des infrastructures autour de Paris pourrait indiquer une centralisation des transports ferroviaires, reliant principalement la capitale aux autres grandes villes, mais créant moins de connexions directes entre les régions.
 
 ---
 # Guide du développeur
