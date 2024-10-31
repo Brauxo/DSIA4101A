@@ -96,6 +96,10 @@ Cette section présentera le fonctionnement du Dashboard une fois lancé, ainsi 
 
 
 ### Page des graphiques 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/44748e76-114c-4c7d-8196-51c23e5e68a6"/>
+</div>
+
 
 
 
