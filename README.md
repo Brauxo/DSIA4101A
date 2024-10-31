@@ -130,7 +130,7 @@ La **seconde** **carte** ajoute ces deux lignes manquantes, qui ont été inclus
 
 ##### Complément d'analyse
 
-En observant les cartes, on remarque que la majorité des lignes LGV partent ou arrivent à Paris, ce qui souligne un certain phénomène d'enclavement du territoire. Cette concentration des infrastructures autour de Paris pourrait indiquer une centralisation des transports ferroviaires, reliant principalement la capitale aux autres grandes villes, mais créant moins de connexions directes entre les régions.
+En observant les cartes, on remarque que la majorité des lignes LGV partent ou arrivent à Paris, ce qui souligne un certain phénomène **d'enclavement** du **territoire**. Cette concentration des infrastructures autour de Paris pourrait indiquer une centralisation des transports ferroviaires, reliant principalement la capitale aux autres grandes villes, mais créant moins de connexions directes entre les régions.
 
 ---
 # Guide du développeur
