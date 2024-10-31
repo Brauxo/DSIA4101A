@@ -32,10 +32,8 @@ class Affichage:
                     else:
                         max_vitesse = 0
 
-                    if 'code_ligne' in row:
-                        code_ligne = row['code_ligne']
-                    else:
-                        code_ligne = 0
+                    code_ligne = row.get('code_ligne', "Non spécifié")
+                    nom_ligne = row.get('nom_ligne', "Nom non spécifié")
 
                     color = "green" if max_vitesse >= 250 else "royalblue"
                     if filter_option == "LGV" and max_vitesse < 250:
@@ -47,7 +45,18 @@ class Affichage:
                     if filter_option == "LGVC":
                         color = "green"
 
-                    folium.PolyLine(locations=filtered_coordinates, color=color, weight=1, opacity=1).add_to(map_object)
+                    # Création du popup avec code_ligne et nom_ligne
+                    popup_content = f"Code ligne: {code_ligne}<br>Nom ligne: {nom_ligne}"
+                    popup = folium.Popup(popup_content, max_width=300)
+
+                    # Ajout de la ligne avec popup au map_object
+                    folium.PolyLine(
+                        locations=filtered_coordinates,
+                        color=color,
+                        weight=1,
+                        opacity=1,
+                        popup=popup
+                    ).add_to(map_object)
 
         return map_object._repr_html_()
 
