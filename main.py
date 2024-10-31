@@ -1,4 +1,4 @@
-from visualizer.dashboardholder import dashboardholder
+from visualizer.dashboardholder import DashboardHolder
 from data.data import data_process
 import pandas as pd
 import os
@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
 
     df= data_process(url)
-    dashboard = dashboardholder(df)
+    dashboard = DashboardHolder(df)
     #print(df)
 
     # Lancer le dashboard en local  

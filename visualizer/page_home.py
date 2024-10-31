@@ -3,18 +3,27 @@ from visualizer.components.header import create_header
 from visualizer.components.footer import create_footer
 from visualizer.components.navbar import create_navbar
 
+def page_home(app):
+    """
+    Creates the layout for the home page of the railway dashboard.
 
-def simple_page_home(app):
+    Args:
+        app (Dash): The Dash application instance.
+
+    Returns:
+        html.Div: The layout structure for the home page with introductory information,
+                  regional train network visualization, and interactive data insights.
+    """
     layout = html.Div([
-        # Insertion du header et de la navbar
+        # Insert header and navbar
         create_header(),
         create_navbar(),
 
-        # Titre de la page
+        # Page title
         html.H1("Bienvenue sur le Dashboard des Chemins de Fer",
                 style={'textAlign': 'center', 'marginTop': '30px'}),
 
-        # Paragraphe expliquant l'objectif du site
+        # Paragraph explaining the site's purpose
         html.P(
             """
             Ce dashboard a pour objectif de fournir une vue d'ensemble sur l'infrastructure des chemins de fer en France. 
@@ -29,7 +38,7 @@ def simple_page_home(app):
             style={'textAlign': 'justify', 'padding': '0 10%', 'marginTop': '20px'}
         ),
 
-        # Première zone: Texte à gauche et carte (image) à droite
+        # First section: Text on the left and map (image) on the right
         html.Div([
             html.Div([
                 html.H3("Les Chemins de Fer en France"),
@@ -53,9 +62,9 @@ def simple_page_home(app):
                          style={'width': '100%', 'borderRadius': '10px'})
             ], style={'width': '45%', 'display': 'inline-block', 'verticalAlign': 'top'})
 
-        ], style={'textAlign': 'center', 'padding': '30px 10%'}),  # Centrage de la zone
+        ], style={'textAlign': 'center', 'padding': '30px 10%'}),  # Center the section
 
-        # Deuxième zone: Image (histo) à gauche et texte à droite
+        # Second section: Image (histogram) on the left and text on the right
         html.Div([
             html.Div([
                 html.Img(src='/assets/histogramme.png',
@@ -79,7 +88,7 @@ def simple_page_home(app):
                 )
             ], style={'width': '45%', 'display': 'inline-block', 'verticalAlign': 'top'})
 
-        ], style={'textAlign': 'center', 'padding': '30px 10%'}),  # Centrage de la zone
+        ], style={'textAlign': 'center', 'padding': '30px 10%'}),  # Center the section
 
         # Footer
         create_footer(app)

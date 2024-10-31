@@ -1,44 +1,74 @@
 import dash
 from dash import dcc, html
-from visualizer.simple_page_home import simple_page_home
-from visualizer.simple_page import simple_page
-from visualizer.simple_page2 import simple_page2
-from visualizer.simple_page3 import simple_page3
+from visualizer.page_home import page_home
+from visualizer.page_map import page_map
+from visualizer.page_graph import page_graph
+from visualizer.page_aboutus import page_aboutus
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 
-class dashboardholder:
-    
+
+class DashboardHolder:
+    """
+    A class to create and manage a Dash dashboard application.
+
+    This class initializes a Dash app with different pages, each displaying specific information.
+    It takes a DataFrame as input and sets up URL-based navigation to switch between pages.
+
+    Args:
+        dataframe (pd.DataFrame): A DataFrame containing the data to be displayed.
+    """
+
     def __init__(self, dataframe):
+        """
+        Initialize the DashboardHolder with the provided data and set up the Dash app.
+
+        Args:
+            dataframe (pd.DataFrame): The DataFrame used for generating dashboard content.
+        """
         self.data_frame = dataframe
         self.app = dash.Dash(__name__)
 
-        # Utilisatiion d'un thème de dashboard 
+        # Applying a theme to the dashboard
         theme = dbc.themes.LUX
         self.app = dash.Dash(__name__, external_stylesheets=[theme])
 
-        # Créer un premier layout
+        # Set up the initial layout with a responsive wrapper
         self.app.layout = html.Div(style={'height': '100vh', 'width': '100vw'}, children=[
-            dcc.Location(id='url', refresh=False),  # Track the URL
-            html.Div(id='page-content', style={'height': '100%', 'width': '100%'})  # Responsive page content
+            dcc.Location(id='url', refresh=False),  # Track the URL for navigation
+            html.Div(id='page-content', style={'height': '100%', 'width': '100%'})  # Dynamic page content
         ])
 
-        # Definit les callbacks
+        # Define callbacks for URL-based page navigation
         @self.app.callback(
             Output('page-content', 'children'),
             [Input('url', 'pathname')]
         )
         def display_page(pathname):
+            """
+            Callback function to display the page content based on the URL path.
+
+            Args:
+                pathname (str): The URL path, used to select which page to display.
+
+            Returns:
+                dash.html.Div: The content of the selected page.
+            """
             if pathname == '/':
-                return simple_page_home(self.app)  # Page d'acceuil
-            elif pathname == '/page-1':
-                return simple_page(self.app,self.data_frame)  # Page 1
-            elif pathname == '/page-2':
-                return simple_page2(self.app,self.data_frame)  # Page 2
-            elif pathname == '/page-3':
-                return simple_page3(self.app,self.data_frame)  # Page 3
+                return page_home(self.app)  # Home page
+            elif pathname == '/page-map':
+                return page_map(self.app, self.data_frame)  # Page map
+            elif pathname == '/page-graph':
+                return page_graph(self.app, self.data_frame)  # Page 2
+            elif pathname == '/page-about_us':
+                return page_aboutus(self.app, self.data_frame)  # Page 3
             else:
-                return simple_page_home(self.app, self.data_frame)  # Retourne sur la page d'acceuil
+                return page_home(self.app, self.data_frame)  # Default to home page
 
     def run(self):
+        """
+        Run the Dash server in debug mode.
+
+        This method starts the Dash app server and enables debug mode to assist in development.
+        """
         self.app.run_server(debug=True)
