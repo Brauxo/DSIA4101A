@@ -24,8 +24,9 @@ Pour la réalisation de ce projet, nous avons utilisé différentes données iss
 
 ## Guide du developpeur
 1. [Contexte](#1---Contexte)
-2. [Arborescence des fichiers](#2---Arborescence-des-fichiers)
-3. [Ajouter une page](#2---Ajouter-une-page)
+2. [Architecture du code](#2---Architecture-du-code)
+3. [Ajouter une page](#3---Ajouter-une-page)
+4. [Suggestions d'améliorations futures](#4---Suggestions-daméliorations-futures)
 ---
 
 # Guide de l'application
@@ -86,25 +87,31 @@ Copiez-collez cette adresse dans un navigateur web pour accéder à l'applicatio
 Cette section présentera le fonctionnement du Dashboard une fois lancé, ainsi que ses différentes fonctionnalités.
 
 ### Navigation dans le Dashboard
-
+Pour naviguer dans le dashboard on utilise une navbar avec 4 boutons pour chaque page de l'application. 
+<div align="center">
+  <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/navbar_example.PNG"/>
+</div>
 
 ### Page d'accueil 
-
-
-
-### Page de la carte 
-
-
-### Page des graphiques 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/44748e76-114c-4c7d-8196-51c23e5e68a6"/>
+  <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/home_example.PNG"/>
 </div>
 
 
+### Page de la carte 
+<div align="center">
+  <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/map_example.PNG"/>
+</div>
 
+### Page des graphiques 
+<div align="center">
+  <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/data_example.PNG"/>
+</div>
 
 ### Page d'information sur nous et ce projet
-
+<div align="center">
+  <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/aboutus_example.PNG"/>
+</div>
 
 
 
@@ -117,13 +124,13 @@ Cette section présentera le fonctionnement du Dashboard une fois lancé, ainsi 
 
 *(Section à compléter)*
 
-Cette section fournira un aperçu général du projet, de ses objectifs ainsi que du contexte de l'analyse sur les voies ferroviaires en France.
+L'objectif de ce projet est de fournir un aperçu général en temps réel des statistiques sur les voies ferroviaires en France ainsi qu'une représentation de la carte de ces voies.
 
 ## 2 - Analyse des voies ferroviaires françaises
 
-*(Section à compléter)*
+*(Section à compléter)* 
 
-#### Analyse Ligne à grande vitesse (LGV)
+#### Analyse Ligne à grande vitesse (LGV) :
 <div align="center">
   <img src="https://github.com/user-attachments/assets/637632e5-2f2e-4f0c-b79e-0ed82112f44e"/>
 </div>
@@ -132,9 +139,11 @@ La **premiere** **carte**  montre les lignes à grande vitesse (LGV) générées
 
 La **seconde** **carte** ajoute ces deux lignes manquantes, qui ont été incluses manuellement. L'absence de ces lignes dans la première carte s'explique par des données incomplètes : la vitesse n'est pas renseignée pour ces deux lignes dans les données.
 
-##### Complément d'analyse
+Complément d'analyse : 
 
 En observant les cartes, on remarque que la majorité des lignes LGV partent ou arrivent à Paris, ce qui souligne un certain phénomène **d'enclavement** du **territoire**. Cette concentration des infrastructures autour de Paris pourrait indiquer une centralisation des transports ferroviaires, reliant principalement la capitale aux autres grandes villes, mais créant moins de connexions directes entre les régions.
+
+#### Analyse des graphiques :
 
 ---
 # Guide du développeur

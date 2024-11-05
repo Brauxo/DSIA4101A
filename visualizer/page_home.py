@@ -58,7 +58,7 @@ def page_home(app):
             ], style={'width': '45%', 'display': 'inline-block', 'verticalAlign': 'top', 'paddingRight': '20px'}),
 
             html.Div([
-                html.Img(src='/assets/carte_chemins_de_fer.jpg',
+                html.Img(src='/assets/map_example.PNG',
                          style={'width': '100%', 'borderRadius': '10px'})
             ], style={'width': '45%', 'display': 'inline-block', 'verticalAlign': 'top'})
 
@@ -67,7 +67,7 @@ def page_home(app):
         # Second section: Image (histogram) on the left and text on the right
         html.Div([
             html.Div([
-                html.Img(src='/assets/histogramme.png',
+                html.Img(src='/assets/data_example.PNG',
                          style={'width': '100%', 'borderRadius': '10px'})
             ], style={'width': '45%', 'display': 'inline-block', 'verticalAlign': 'top', 'paddingRight': '20px'}),
 
