@@ -82,9 +82,7 @@ Copiez-collez cette adresse dans un navigateur web pour accéder à l'applicatio
 
 ## 3 - Présentation du Dashboard
 
-*(Section à compléter)*
-
-Cette section présentera le fonctionnement du Dashboard une fois lancé, ainsi que ses différentes fonctionnalités.
+Cette section présente le fonctionnement du Dashboard une fois lancé, ainsi que ses différentes fonctionnalités.
 
 ### Navigation dans le Dashboard
 Pour naviguer dans le dashboard on utilise une navbar avec 4 boutons pour chaque page de l'application. 
@@ -93,27 +91,29 @@ Pour naviguer dans le dashboard on utilise une navbar avec 4 boutons pour chaque
 </div>
 
 ### Page d'accueil 
+La page d'accueil qui est la première page montré lors du lancement du dashboard, elle présente vaguement le contenu du dashboard.
 <div align="center">
   <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/home_example.PNG"/>
 </div>
 
 
 ### Page de la carte 
+La page qui montre différentes cartes des chemins de fer français (LGV,Toutes,Lignes classiques), cette page utilise les callbacks pour mettre à jour en direct les cartes.
 <div align="center">
   <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/map_example.PNG"/>
 </div>
 
 ### Page des graphiques 
+Cette page permet d'obtenir des informations sous formes de graphique sur les chemins de fer français.
 <div align="center">
   <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/data_example.PNG"/>
 </div>
 
 ### Page d'information sur nous et ce projet
+Cette page contient les informations sur les outils utilisés et sur nous.
 <div align="center">
   <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/aboutus_example.PNG"/>
 </div>
-
-
 
 
 ---
@@ -122,28 +122,52 @@ Pour naviguer dans le dashboard on utilise une navbar avec 4 boutons pour chaque
 
 ## 1 - Contexte
 
-*(Section à compléter)*
-
-L'objectif de ce projet est de fournir un aperçu général en temps réel des statistiques sur les voies ferroviaires en France ainsi qu'une représentation de la carte de ces voies.
+L'objectif de ce projet est de fournir un aperçu général et en temps réel des statistiques sur les voies ferroviaires en France, ainsi qu'une représentation cartographique des rails français. Cette analyse permettra de visualiser les caractéristiques du réseau ferroviaire, d’identifier des tendances et les données du réseau. Ce projet s'inscrit dans le cadre de la validation de l'unité DSIA4101.
 
 ## 2 - Analyse des voies ferroviaires françaises
 
-*(Section à compléter)* 
-
-#### Analyse Ligne à grande vitesse (LGV) :
+#### Analyse Lignes sur la carte :
 <div align="center">
   <img src="https://github.com/user-attachments/assets/637632e5-2f2e-4f0c-b79e-0ed82112f44e"/>
 </div>
 
-La **premiere** **carte**  montre les lignes à grande vitesse (LGV) générées à partir des données. Le critère pour qu'une ligne soit considérée comme LGV est une vitesse maximale supérieure à 250 km/h. Cependant, après une vérification rapide, il apparaît que deux lignes LGV manquent sur cette carte.
+La **première** **carte**  montre l'entièreté des lignes  générées à partir des données de la sncf, ces lignes sont variées et peuvent être actuellement hors-service.
 
-La **seconde** **carte** ajoute ces deux lignes manquantes, qui ont été incluses manuellement. L'absence de ces lignes dans la première carte s'explique par des données incomplètes : la vitesse n'est pas renseignée pour ces deux lignes dans les données.
+La **deuxième** **carte**  montre les lignes  générées à partir des données qui ne sont pas des lignes à grandes vitesses (<= 250 km/h), ce sont les lignes dites classique.
+
+La **troisème** **carte**  montre les lignes à grande vitesse (LGV) générées à partir des données. Le critère pour qu'une ligne soit considérée comme LGV est une vitesse maximale supérieure à 250 km/h. Cependant, après une vérification rapide, il apparaît que deux lignes LGV manquent sur cette carte.
+
+La **quatrième** **carte** ajoute ces deux lignes manquantes, qui ont été incluses manuellement. L'absence de ces lignes dans la première carte s'explique par des données incomplètes : la vitesse n'est pas renseignée pour ces deux lignes dans les données.
 
 Complément d'analyse : 
 
 En observant les cartes, on remarque que la majorité des lignes LGV partent ou arrivent à Paris, ce qui souligne un certain phénomène **d'enclavement** du **territoire**. Cette concentration des infrastructures autour de Paris pourrait indiquer une centralisation des transports ferroviaires, reliant principalement la capitale aux autres grandes villes, mais créant moins de connexions directes entre les régions.
 
 #### Analyse des graphiques :
+
+Les graphiques sur les voies ferroviaires en France montrent une répartition intéressante des lignes, en fonction de leur vitesse, de leur électrification et de la taille des tronçons.
+
+<div align="center">
+  <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/histo_speed.png"/>
+</div>
+
+**Les** **vitesses** 
+Pour les lignes à grande vitesse, on observe qu'elles sont bien représentées, avec 17 tronçons qui roulent à 270 et 300 km/h. On trouve aussi 4 tronçons à 320 km/h et un seul qui atteint 350 km/h. Cela montre que, même si la majorité des LGV roulent à des vitesses proches de 300 km/h, il existe quelques lignes qui vont encore plus vite atteignant une vitesse max de 350 km/h.
+Pour lignes classiques, la situation est bien différente. La majorité des tronçons sont assez lents, avec 23,7% des lignes classiques circulant à seulement 30 km/h. celle-ci semblent être régionales en observant sur la carte et repésentent de plus petites distances.
+
+<div align="center">
+  <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/piechart_electric.png"/>
+</div>
+
+**L’électrification** **des** **lignes** 
+En termes d’électrification, on remarque que 67,8% des lignes sont alimentées par un système de 25 000 volts, ce qui est principalement destiné aux LGV. 31,3% des tronçons utilisent un système de 1 500 volts, plus couramment utilisé pour les lignes classiques et régionales. Les autres systèmes d’alimentation, bien que présents, représentent une proportion très faible du réseau mais on peut noté des précisions comme des volts continu par 3 ème rail qui après une recherche sur internet représente les lignes avec un rail supplémentaire.
+
+<div align="center">
+  <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/histo_segment.png"/>
+</div>
+
+**La** **taille** **des** **segments** 
+Enfin, en ce qui concerne la taille des tronçons, la plupart d'entre eux mesurent moins de 125 km (environ 98% d'entre eux), bien que certains tronçons soient plus longs, notamment le plus grand se situant entre 825 et 875 km. Cela montre que le réseau français est en grande majorité composé de lignes assez courtes, adaptées aux trajets régionaux, même si certaines lignes longues sont concentrées sur les grands axes à grande vitesse. Par ailleurs les troncons les plus grands correpondent aux LGV. 
 
 ---
 # Guide du développeur
@@ -171,7 +195,10 @@ Nous avons structuré le projet en plusieurs fichiers Python et répertoires afi
 
 - **visualizer** : modules responsables de la création du tableau de bord et de la visualisation.
   - `dashboardholder.py` : Gère l’interface du tableau de bord principal.
-  - `simple_page*.py` : Différentes pages de visualisation (accueil, pages spécifiques).
+  - `page_home.py` : La page d'accueil du dashboard.
+  - `page_map.py` : Une page qui montre 4 carte différentes des chemins de fer français en fonction de certains critères.
+  - `page_graph.py` : Une page où l'on peut retrouvé différents graphiques sur les données de la SNCF.
+  - `page_aboutus.py` : Une page qui contient des informations sur les outils utilisés et les créateurs.
   - `components` : Sous-dossier pour les composants UI (ex. : en-tête, navigation, pied de page).
   - `assets` : Regroupe les fichiers visuels et CSS (images, icônes, style CSS pour le design du tableau de bord).
 
