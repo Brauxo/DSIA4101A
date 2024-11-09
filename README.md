@@ -172,6 +172,8 @@ Enfin, en ce qui concerne la taille des tronçons, la plupart d'entre eux mesure
   <img src="https://github.com/Brauxo/DSIA4101A/blob/main/visualizer/assets/histo_segment.png"/>
 </div>
 ---
+
+
 # Guide du développeur
 
 ## 1 - Contexte
