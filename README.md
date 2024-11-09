@@ -152,6 +152,7 @@ Les graphiques sur les voies ferroviaires en France montrent une répartition in
 </div>
 
 **Les** **vitesses** 
+
 Pour les lignes à grande vitesse, on observe qu'elles sont bien représentées, avec 17 tronçons qui roulent à 270 et 300 km/h. On trouve aussi 4 tronçons à 320 km/h et un seul qui atteint 350 km/h. Cela montre que, même si la majorité des LGV roulent à des vitesses proches de 300 km/h, il existe quelques lignes qui vont encore plus vite atteignant une vitesse max de 350 km/h.
 Pour lignes classiques, la situation est bien différente. La majorité des tronçons sont assez lents, avec 23,7% des lignes classiques circulant à seulement 30 km/h. celle-ci semblent être régionales en observant sur la carte et repésentent de plus petites distances.
 
@@ -160,6 +161,7 @@ Pour lignes classiques, la situation est bien différente. La majorité des tron
 </div>
 
 **L’électrification** **des** **lignes** 
+
 En termes d’électrification, on remarque que 67,8% des lignes sont alimentées par un système de 25 000 volts, ce qui est principalement destiné aux LGV. 31,3% des tronçons utilisent un système de 1 500 volts, plus couramment utilisé pour les lignes classiques et régionales. Les autres systèmes d’alimentation, bien que présents, représentent une proportion très faible du réseau mais on peut noté des précisions comme des volts continu par 3 ème rail qui après une recherche sur internet représente les lignes avec un rail supplémentaire.
 
 <div align="center">
@@ -167,6 +169,7 @@ En termes d’électrification, on remarque que 67,8% des lignes sont alimentée
 </div>
 
 **La** **taille** **des** **segments** 
+
 Enfin, en ce qui concerne la taille des tronçons, la plupart d'entre eux mesurent moins de 125 km (environ 98% d'entre eux), bien que certains tronçons soient plus longs, notamment le plus grand se situant entre 825 et 875 km. Cela montre que le réseau français est en grande majorité composé de lignes assez courtes, adaptées aux trajets régionaux, même si certaines lignes longues sont concentrées sur les grands axes à grande vitesse. Par ailleurs les troncons les plus grands correpondent aux LGV. 
 
 ---
