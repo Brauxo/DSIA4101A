@@ -215,7 +215,7 @@ Voici un aperçu visuel de l'arborescence du projet :
 Représentation alternative de l'architecture du projet : *(mettre à jour si besoin, code Mermaid disponible)*
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/f358ed75-c1b4-4119-944f-ad8372eb3356" alt="Représentation alternative de l'architecture" width="100%"/>
+    <img src="https://github.com/user-attachments/assets/d6f0dab2-88b3-49f7-af8a-71f61f3f4db2" alt="Représentation alternative de l'architecture" width="100%"/>
 </div>
 
 ### Principe de compartimentation
