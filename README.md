@@ -212,7 +212,7 @@ Voici un aperçu visuel de l'arborescence du projet :
     <img src="https://github.com/user-attachments/assets/00e9e769-bd67-4330-bf7a-d5074fe95cd4" alt="Aperçu de l'arborescence du projet" width="65%"/>
 </div>
 
-Représentation alternative de l'architecture du projet : *(mettre à jour si besoin, code Mermaid disponible)*
+Représentation alternative de l'architecture du projet : 
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/d6f0dab2-88b3-49f7-af8a-71f61f3f4db2" alt="Représentation alternative de l'architecture" width="100%"/>
