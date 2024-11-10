@@ -206,10 +206,10 @@ Nous avons structuré le projet en plusieurs fichiers Python et répertoires afi
   - `components` : Sous-dossier pour les composants UI (ex. : en-tête, navigation, pied de page).
   - `assets` : Regroupe les fichiers visuels et CSS (images, icônes, style CSS pour le design du tableau de bord).
 
-Voici un aperçu visuel de l'arborescence du projet : *(mettre à jour une fois le projet terminé)*
+Voici un aperçu visuel de l'arborescence du projet : 
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/3da9ee46-32cf-49c7-a5f6-a69309bf7b91" alt="Aperçu de l'arborescence du projet" width="65%"/>
+    <img src="https://github.com/user-attachments/assets/00e9e769-bd67-4330-bf7a-d5074fe95cd4" alt="Aperçu de l'arborescence du projet" width="65%"/>
 </div>
 
 Représentation alternative de l'architecture du projet : *(mettre à jour si besoin, code Mermaid disponible)*
